@@ -33,13 +33,11 @@ export const { POST } = serve<InitialData>(async (context) => {
 })
 
 async function sendEmail(message: string, email: string) {
-  // Implement email sending logic here
   console.log(`Sending ${message} email to ${email}`)
 }
 
 type UserState = "non-active" | "active"
 
 const getUserState = async (): Promise<UserState> => {
-  // Implement user state logic here
   return "non-active"
 }
