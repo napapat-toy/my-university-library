@@ -56,13 +56,14 @@ const AuthForm = <T extends FieldValues>({
         description: isSignIn
           ? "You have successfully signed in."
           : "You have successfully signed up.",
+        style: { backgroundColor: "white" },
       });
 
       router.push("/");
     } else {
       toast.error(`Error ${isSignIn ? "signing in " : "signing up"}`, {
         description: result.error ?? "An error occurred.",
-        style:{backgroundColor:'white'}
+        style: { backgroundColor: "white" },
       });
     }
   };

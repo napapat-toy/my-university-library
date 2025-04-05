@@ -57,6 +57,7 @@ const ImageUpload = ({ variant, onFileChange }: Props) => {
     console.log(error);
     toast.error("Image upload failed", {
       description: `Your image could not be uploaded. Please try again.`,
+      style: { backgroundColor: "white" },
     });
   };
   const onSuccess = (res: any) => {
@@ -65,6 +66,7 @@ const ImageUpload = ({ variant, onFileChange }: Props) => {
 
     toast.success("Image uploaded successfully", {
       description: `${res.filePath} upload successfully!`,
+      style: { backgroundColor: "white" },
     });
   };
 
